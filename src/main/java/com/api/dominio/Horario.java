@@ -1,8 +1,7 @@
 package com.api.dominio;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -10,8 +9,11 @@ import java.util.List;
 
 @Entity
 @Deprecated
+@NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
+@ToString
 public class Horario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
